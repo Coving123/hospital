@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd ">
+	
+
+	<context:component-scan base-package="controller"></context:component-scan>
+
+   	<mvc:annotation-driven></mvc:annotation-driven>
+
+ 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+ 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property> 
+ 		<property name="prefix" value="/WEB-INF/jsp/"></property> 
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	<mvc:view-controller path="/showLogin.do" view-name="login"/>
+	<mvc:view-controller path="/showRegist.do" view-name="register"/>
+	<mvc:view-controller path="/showIndex.do" view-name="index"/>
+	<mvc:view-controller path="/showMain.do" view-name="main"/>
+	<mvc:view-controller path="/showChangePassword.do" view-name="user/changePwd"/>
+	
+	<mvc:view-controller path="/showDoctorList.do" view-name="doctor/doctorList"/>
+	<mvc:view-controller path="/showNurseList.do" view-name="nurse/nurseList"/>
+		
+	<mvc:view-controller path="/showRecordList.do" view-name="case/caseSeeList"/>
+	<mvc:view-controller path="/showRecordListN.do" view-name="case/caseSeeListN"/>
+	<mvc:view-controller path="/showRecordManage.do" view-name="case/caseList"/>
+	<mvc:view-controller path="/showAppointMentList.do" view-name="order/orderSeeList"/>
+	<mvc:view-controller path="/showAppointMentManage.do" view-name="order/orderList"/>
+	<mvc:view-controller path="/showEngageMentList.do" view-name="order/orderSeeListN"/>
+	<mvc:view-controller path="/showEngageMentManage.do" view-name="order/orderListN"/>
+	
+	<mvc:view-controller path="/showMedicineList.do" view-name="medicine/medSeeList"/>
+	<mvc:view-controller path="/showMedicineManage.do" view-name="medicine/medList"/>
+	<mvc:view-controller path="/showBookList.do" view-name="book/bookSeeList"/>
+	<mvc:view-controller path="/showBookManage.do" view-name="book/bookList"/>
+	</beans>
+

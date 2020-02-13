@@ -1,0 +1,65 @@
+/*管理员信息*/
+.layui-side-scroll .user-info{
+	width: 200px;
+	height: auto;
+	padding: 0px;
+	padding-top: 15px;
+	padding-bottom: 8px;
+	margin-top: 10px;;
+}
+.layui-side-scroll .user-info .photo{
+	display: block;
+	width: 76px;
+	height: 76px;
+	margin-left: 50px;
+	padding: 0px;
+}
+.layui-side-scroll .user-info .photo img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	border: 4px solid #44576B;
+}
+.layui-side-scroll .user-info p{
+	display: block;
+	width: 100%;
+	height: 25px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 25px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+/*顶部导航底部border*/
+.one-header-border{
+	    border-bottom: 3px solid #1AA094;
+}
+
+/*顶部导航LOGO*/
+.one-logo{
+	height: 62px;
+    line-height: 62px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/*左边导航*/
+.one-left-icon{
+	font-size: 16px;
+}
+
+/*右边内容*/
+.one-tab-selected{
+	background-color:#1AA094;
+}
+.one-iframe{
+	height: 341px; 
+	width: 1678px; 
+	opacity: 1; 
+	margin-top: 0px;
+}

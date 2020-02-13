@@ -1,0 +1,12 @@
+package controller;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+//@ControllerAdvice
+public class GlobalExceptionHandler {
+
+	@ExceptionHandler
+	public String exceptionHandler(Exception e){
+		return "error";
+	}
+}
