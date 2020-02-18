@@ -1,5 +1,5 @@
 # Description
-The project was completed around March 2019, as a project of graduation project.
+The project was completed around March 2019, as a project of graduation.
 The project adopts B/S mode, which is divided into Front-end module and Background information management module.
 The Front-end mainly includes online appointment, medical records and prescriptions;
 Background mainly includes patient information management, medical personnel information management, diagnosis and prescription information management, account management and other management modules.
